@@ -1,0 +1,35 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --gold: #FBC710;
+    --white: #fff;
+    --dark: #272727;
+}
+
+html,
+body
+{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--dark);
+}
+
+.wrapper
+{
+    margin: auto;
+    width: 1920px;
+}
+
+@media(max-width:1940px)
+{
+    .wrapper
+    {
+        width: 95%;
+    }    
+}
