@@ -1,0 +1,40 @@
+#skills
+{
+    width: 1295px;
+    height: 140px;
+    /* position: absolute; */
+    background: var(--dark);
+    position: relative;
+    top: -140px;
+    left: 514px; /* 1920px */
+    z-index: 4;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+}
+
+#skills article
+{
+    text-align: center;
+    color: var(--white);
+}
+
+#skills h1
+{
+    font-size: 48px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+#skills article:hover h1,
+#skills article:focus h1
+{
+    color: var(--gold);
+}
+
+#skills p
+{
+    font-size: 13px;
+    font-weight: 500;
+}

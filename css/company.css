@@ -1,0 +1,47 @@
+/* //////////////////////////////
+// Компанії, які нам довіряють // 
+////////////////////////////// */
+
+#company
+{
+    margin: 200px auto 0;
+    width: 1110px;
+}
+
+#company header h1
+{
+    text-align: center;
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 50px;
+}
+
+#company .content
+{
+    display: grid;
+    grid-template-columns: repeat(10,33.333333%);
+    left: -33.333333%;
+    gap: 50px;
+    overflow: hidden;
+}
+
+#company .content picture
+{
+    align-self: center;
+}
+
+#company .nav
+{
+    display: block;
+    text-align: center;
+}
+
+#company .nav li 
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    margin: 50px 0 0;
+}

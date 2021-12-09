@@ -1,0 +1,96 @@
+#about
+{
+    width: 1110px;
+    margin: auto auto 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+
+/* опис */
+#about span
+{
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--gold);
+    margin: 0 0 35px;
+}
+
+#about h1
+{
+    color: var(--gold);
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 0 70px;
+}
+
+#about h1::first-line
+{
+    color: var(--white);
+}
+
+#about p 
+{
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.8;
+    margin: 0 0 115px;
+}
+
+#about a
+{
+    width: 195px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* картинка */
+#about picture
+{
+    justify-self: flex-end;
+
+    /* for logo */
+    position: relative;
+}
+
+/* логотип з жовтими лініями на картинці справа */
+#about .pseudo-watermark
+{
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-left: 4px solid var(--gold);
+}
+
+#about .pseudo-watermark::after,
+#about .pseudo-watermark::before
+{
+    content: '';
+    display: block;
+    width: 160px;
+    height: 4px;
+    background: var(--gold);
+    position: absolute;
+    left: 0;
+}
+
+#about .pseudo-watermark::after
+{
+    top: 0;
+}
+
+#about .pseudo-watermark::before
+{  
+    bottom: 0;
+}

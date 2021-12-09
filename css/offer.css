@@ -1,0 +1,95 @@
+/* ///////////////////////
+// Пропозиції на продаж //
+/////////////////////// */
+
+#offer 
+{
+    display: grid;
+    margin: 100px auto 0 340px;
+    width: 1450px;
+}
+
+#offer header h1
+{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 300;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding-left: 56px;
+}
+
+#offer figure
+{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+#offer figcaption
+{
+    align-self: flex-start;
+
+    border-left: 4px solid var(--gold);
+    padding: 80px 40px;
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+}
+
+#offer figcaption::before,
+#offer figcaption::after
+{
+    content: '';
+    width: 270px;
+    height: 4px;
+    background: var(--gold);
+    position: absolute;
+    left: 0;
+    display: block;
+}
+
+#offer figcaption::before
+{
+    top: 0;
+}
+
+#offer figcaption::after
+{
+    bottom: 0;
+}
+
+#offer figcaption h1
+{
+    color: var(--white);
+}
+
+#offer figcaption p
+{
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+#offer figcaption a
+{
+    height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    align-self: flex-start;
+    padding: 0 42px;
+}
+
+#offer picture
+{
+    height: 660px;
+    background: tomato;
+}
