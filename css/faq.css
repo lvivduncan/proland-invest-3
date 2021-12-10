@@ -18,14 +18,14 @@
     margin: 0 0 50px;
 }
 
-#faq .content
+#faq .tns-inner
 {
-    display: grid;
-    grid-template-columns: repeat(10,calc(50% - 65px / 2));
-    left: -50%;
-    gap: 65px;
-    overflow: hidden;
-    width: 100%;
+    margin: 0;
+}
+
+.faq-item
+{
+    padding: 0 20px;
 }
 
 #faq article
@@ -34,7 +34,7 @@
     border: 4px solid var(--gold);
     height: 350px;
     padding: 40px;
-    display: flex;
+    display: inline-flex;
     flex-flow: column;
     justify-content: space-between;
 }
@@ -51,7 +51,35 @@
     right: 20px;
 }
 
-/* question */
+
+
+
+#faq .tns-nav
+{
+    margin: 100px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#faq .tns-nav button 
+{
+    display: block;
+    width: 13px;
+    height: 13px;
+    border: none;
+    border-radius: 50%;
+    background: var(--white);
+    margin: 50px 0 0;
+    cursor: pointer;
+}
+
+#faq .tns-nav button.tns-nav-active
+{
+    background: var(--gold);
+}
+
 #faq article h1
 {
     font-size: 24px;
@@ -60,7 +88,6 @@
     padding-right: 100px;
 }
 
-/* answer */
 #faq article p
 {
     font-size: 14px;
@@ -78,28 +105,4 @@
     padding-right: 30px;
     background: url("data:image/svg+xml,%3Csvg width='13' height='22' viewBox='0 0 13 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.322 11.0245L1.00001 0.999995' stroke='%23FBC710'/%3E%3Cpath d='M1 21L12.322 10.9755' stroke='%23FBC710'/%3E%3C/svg%3E%0A") no-repeat right center / 13px 22px;
     align-self: flex-start;
-}
-
-#faq .nav
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-#faq .nav li 
-{
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: var(--white);
-    margin: 50px 0 0;
-    cursor: pointer;
-}
-
-#faq .nav li.active
-{
-    background: var(--gold);
 }

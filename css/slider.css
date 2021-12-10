@@ -197,8 +197,11 @@
     background-color: var(--gold);
 }
 
-
-
+/* кнопка стоп/старт */
+#top-slider [data-action]
+{
+    display: none;
+}
 
 
 

@@ -1,29 +1,21 @@
 #header
 {
-    height: 109px;
+    height: 110px;
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
     position: relative;
-    z-index: 3;
+    /* z-index: 3; */
+    z-index: 7;
 }
 
 #header .wrapper 
 {
-    height: 109px;
+    height: 110px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
     justify-content: space-between;
     gap: 5px;
 }
-
-/* #header .wrapper
-{
-    grid-gap: 5px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    height: 100%;
-} */
 
 /* 58*300 left */
 #logo
@@ -91,4 +83,59 @@
 #phone ul
 {
     display: none;
+}
+
+#phone ul.active
+{
+    display: block;
+    left: calc(50% - 100px);
+    position: fixed;
+    top: calc(50% - 110px);
+    z-index: 7;
+}
+
+#cover
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 6;
+}
+
+#cover::before
+{
+    content: '';
+    display: block;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--dark);
+    z-index: 1;
+}
+
+#phone li
+{
+    display: block;
+}
+
+#phone li a
+{
+    color: var(--white);
+    padding: 10px;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+#phone svg
+{
+    width: 32px;
+    height: 32px;
+    fill: var(--white);
 }
