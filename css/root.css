@@ -7,10 +7,11 @@
 
 :root
 {
-    --gold: #FBC710;
+    --gold: #fbc710;
     --white: #fff;
     --dark: #272727;
     --gray: #929292;
+    --footer: #a6a6a6;
 
     --gap: 50px; /* del? */
 }

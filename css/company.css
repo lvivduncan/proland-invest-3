@@ -17,31 +17,89 @@
     margin: 0 0 50px;
 }
 
-#company .content
+#company .tns-horizontal.tns-subpixel>.tns-item
 {
-    display: grid;
-    grid-template-columns: repeat(10,33.333333%);
-    left: -33.333333%;
-    gap: 50px;
-    overflow: hidden;
+    vertical-align: middle;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
-#company .content picture
+#company .tns-outer
 {
-    align-self: center;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
 }
 
-#company .nav
+/* слайди */
+#company .tns-ovh
 {
-    display: block;
-    text-align: center;
+    order: 1;
 }
 
-#company .nav li 
+/* крапки навігації */
+#company .tns-nav
 {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: var(--white);
-    margin: 50px 0 0;
+    order: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#company .tns-nav button
+{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: none;
+}
+
+#company .tns-nav button.tns-nav-active
+{
+    background: var(--gold);
+}
+
+/* кнопки вліво-вправо */
+#company .tns-controls
+{
+    order: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* to right */
+#company .tns-controls button
+{
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(251, 199, 16, .3);
+    transition: .5s;
+    border: none;
+    border-radius: 50%;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 11.25C1.32476 11.2503 1.15493 11.1893 1.02 11.0775C0.944056 11.0145 0.88128 10.9372 0.835266 10.8499C0.789252 10.7626 0.760905 10.6672 0.751848 10.5689C0.742791 10.4707 0.753202 10.3716 0.782486 10.2774C0.811769 10.1832 0.859348 10.0957 0.9225 10.02L4.2825 5.99996L1.0425 1.97246C0.980201 1.89574 0.933677 1.80747 0.905603 1.71271C0.87753 1.61796 0.868459 1.51859 0.878914 1.42032C0.889368 1.32205 0.919141 1.22681 0.966521 1.14008C1.0139 1.05336 1.07796 0.976847 1.155 0.914955C1.2326 0.846678 1.32347 0.795177 1.42192 0.763686C1.52037 0.732194 1.62426 0.721391 1.72708 0.731955C1.8299 0.742518 1.92943 0.774221 2.01941 0.825072C2.1094 0.875923 2.18791 0.944826 2.25 1.02746L5.8725 5.52746C5.98281 5.66165 6.04312 5.82999 6.04312 6.00371C6.04312 6.17742 5.98281 6.34576 5.8725 6.47996L2.1225 10.98C2.04726 11.0707 1.95169 11.1425 1.84353 11.1894C1.73537 11.2363 1.61768 11.257 1.5 11.25Z' fill='white'/%3E%3C/svg%3E%0A");
+
+    background-repeat: no-repeat;
+    background-size: 7px 12px;
+    background-position: center;
+}
+
+/* to left */
+#company .tns-controls button:first-child
+{
+    
+    background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 11.25C5.67524 11.2503 5.84507 11.1893 5.98 11.0775C6.05594 11.0145 6.11872 10.9372 6.16473 10.8499C6.21075 10.7626 6.2391 10.6672 6.24815 10.5689C6.25721 10.4707 6.2468 10.3716 6.21751 10.2774C6.18823 10.1832 6.14065 10.0957 6.0775 10.02L2.7175 5.99996L5.9575 1.97246C6.0198 1.89574 6.06632 1.80747 6.0944 1.71271C6.12247 1.61796 6.13154 1.51859 6.12109 1.42032C6.11063 1.32205 6.08086 1.22681 6.03348 1.14008C5.9861 1.05336 5.92204 0.976847 5.845 0.914955C5.7674 0.846678 5.67653 0.795177 5.57808 0.763686C5.47963 0.732194 5.37574 0.721391 5.27292 0.731955C5.1701 0.742518 5.07057 0.774221 4.98059 0.825072C4.8906 0.875923 4.81209 0.944826 4.75 1.02746L1.1275 5.52746C1.01719 5.66165 0.956882 5.82999 0.956882 6.00371C0.956882 6.17742 1.01719 6.34576 1.1275 6.47996L4.8775 10.98C4.95274 11.0707 5.04831 11.1425 5.15647 11.1894C5.26463 11.2363 5.38232 11.257 5.5 11.25Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+#company .tns-controls button:hover
+{
+    background-color: var(--gold);
 }

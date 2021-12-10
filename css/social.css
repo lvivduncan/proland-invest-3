@@ -1,0 +1,31 @@
+/* .social
+{
+    display: inline-block;
+}
+
+.social li 
+{
+    display: inline-block;
+} */
+
+
+.social
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.social svg
+{
+    fill: var(--white);
+    height: 32px;
+    transition: .5s;
+    width: 32px;
+}
+
+.social a:hover svg
+{
+    fill: var(--gold);
+}
