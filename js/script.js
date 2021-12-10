@@ -77,18 +77,18 @@ let phone = false
 // phone
 document.getElementById('phone').addEventListener('click', () => {
 
-  if(phone === false){
+    if(phone === false){
 
-    document.querySelector('#phone ul').className = 'active'
-    body.append(cover)
-    phone = true
-  } else {
-    
-    document.querySelector('#phone ul').className = ''
-    cover.remove()
-    phone = false
-  }
-  
+        document.querySelector('#phone ul').className = 'active'
+        body.append(cover)
+        phone = true
+    } else {
+        
+        document.querySelector('#phone ul').className = ''
+        cover.remove()
+        phone = false
+    }
+
 })
 
 cover.addEventListener('click', () => {
