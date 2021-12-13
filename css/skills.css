@@ -18,6 +18,14 @@
     background: var(--white);
 }
 
+@media (prefers-color-scheme: light)
+{
+    #skills
+    {
+        background: var(--white);
+    }
+}
+
 #skills article
 {
     text-align: center;
@@ -27,6 +35,14 @@
 .active #skills article
 {
     color: var(--dark)
+}
+
+@media (prefers-color-scheme: light)
+{
+    #skills article
+    {
+        color: var(--dark)
+    }
 }
 
 #skills h1

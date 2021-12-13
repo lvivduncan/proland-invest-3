@@ -25,6 +25,14 @@
     color: var(--dark);
 }
 
+@media (prefers-color-scheme: light)
+{
+    #offer header h1
+    {
+        color: var(--dark);
+    }
+}
+
 #offer figure
 {
     display: grid;
@@ -74,6 +82,14 @@
 .active #offer figcaption h1
 {
     color: var(--dark);
+}
+
+@media (prefers-color-scheme: light)
+{
+    #offer figcaption h1
+    {
+        color: var(--dark);
+    }
 }
 
 #offer figcaption p

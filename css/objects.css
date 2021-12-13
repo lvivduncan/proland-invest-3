@@ -46,6 +46,14 @@
     color: var(--dark);
 }
 
+@media (prefers-color-scheme: light)
+{
+    #objects header h1
+    {
+        color: var(--dark);
+    }
+}
+
 #objects header h1::before
 {
     content: '';
@@ -89,6 +97,14 @@
 .active #objects .content h1
 {
     color: var(--dark);
+}
+
+@media (prefers-color-scheme: light)
+{
+    #objects .content h1
+    {
+        color: var(--dark);
+    }
 }
 
 #objects .content p
@@ -137,7 +153,6 @@
 {
     grid-area: objects-1;
 }
-
 
 /* 2 фото */
 #objects picture:nth-of-type(2)

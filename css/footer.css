@@ -1,7 +1,5 @@
 #footer
 {
-    /* width: 1800px; */
-    /* margin: auto; */
     border-top: 1px solid var(--footer);
     padding: 70px 0;
 }
@@ -9,6 +7,14 @@
 .active #footer
 {
     background: var(--footer-light);
+}
+
+@media (prefers-color-scheme: light)
+{
+    #footer
+    {
+        background: var(--footer-light);
+    }
 }
 
 #footer .wrapper
@@ -68,6 +74,14 @@
     color: var(--dark);
 }
 
+@media (prefers-color-scheme: light)
+{
+    #footer .center a
+    {
+        color: var(--dark);
+    }
+}
+
 #footer .center a:hover,
 #footer .center a:focus
 {
@@ -83,10 +97,8 @@
 #footer form
 {
     display: flex;
-    /* align-items: center; */
     flex-flow: column;
     gap: 20px;
-    /* justify-content: center; */
     margin: -20px 0 0
 }
 
@@ -100,6 +112,14 @@
 .active #footer label
 {
     color: var(--dark);
+}
+
+@media (prefers-color-scheme: light)
+{
+    #footer label
+    {
+        color: var(--dark);
+    }
 }
 
 #footer input
@@ -119,6 +139,29 @@
 {
     border-color: var(--gray);
 }
+
+@media (prefers-color-scheme: light)
+{
+    #footer input
+    {
+        border-color: var(--gray);
+    }    
+}
+
+/* Chrome, Safari, Edge, Opera */
+#footer input::-webkit-outer-spin-button,
+#footer input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+#footer input[type=number]
+{
+    -moz-appearance: textfield;
+}
+
 
 #footer input:focus
 {
@@ -149,9 +192,9 @@
 {
     grid-area: copy;
 
-    /* text-align: center; */
     color: var(--gray);
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
