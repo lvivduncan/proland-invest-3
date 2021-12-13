@@ -13,16 +13,21 @@
 
 #footer .wrapper
 {
-    margin: 70px auto;
+    margin: 70px auto 0;
     width: 1110px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
     gap: 100px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+        'footer-left footer-center footer-right'
+        'copy copy copy'
 }
 
 /* лівий блок */
 #footer .left
 {
+    grid-area: footer-left;
+
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -32,6 +37,8 @@
 /* центральний */
 #footer .center
 {
+    grid-area: footer-center;
+
     display: flex;
     gap: 50px;
     flex-flow: column;
@@ -70,7 +77,7 @@
 /* правий */
 #footer .right
 {
-    
+    grid-area: footer-right;
 }
 
 #footer form
@@ -136,4 +143,15 @@
 {
     background:var(--white);
     color:var(--black)
+}
+
+#copy
+{
+    grid-area: copy;
+
+    /* text-align: center; */
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
