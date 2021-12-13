@@ -30,6 +30,11 @@
     font-weight: bold;
 }
 
+.active #docs header h1
+{
+    color: var(--dark);
+}
+
 #docs header a
 {
     color: var(--gold);
@@ -80,6 +85,12 @@
     transition: .5s;
 }
 
+.active #docs article div
+{
+    background: var(--white);
+    color: var(--dark);
+}
+
 #docs article:hover
 {
     border-color: var(--gold);
@@ -96,6 +107,11 @@
     font-weight: bold;
     color: var(--white);
     padding-right: 100px;
+}
+
+.active #docs article h1
+{
+    color: var(--dark);
 }
 
 #docs article p

@@ -17,6 +17,11 @@
     margin: 0 0 50px;
 }
 
+.active #company header h1
+{
+    color: var(--dark);
+}
+
 #company .tns-horizontal.tns-subpixel>.tns-item
 {
     vertical-align: middle;

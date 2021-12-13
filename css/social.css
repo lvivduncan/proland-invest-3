@@ -29,3 +29,8 @@
 {
     fill: var(--gold);
 }
+
+.active .social svg
+{
+    fill: var(--dark);
+}

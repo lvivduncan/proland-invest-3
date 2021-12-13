@@ -1,9 +1,14 @@
 #footer
 {
-    width: 1800px;
-    margin: auto;
+    /* width: 1800px; */
+    /* margin: auto; */
     border-top: 1px solid var(--footer);
     padding: 70px 0;
+}
+
+.active #footer
+{
+    background: var(--footer-light);
 }
 
 #footer .wrapper
@@ -51,6 +56,11 @@
     transition: .5s;
 }
 
+.active #footer .center a
+{
+    color: var(--dark);
+}
+
 #footer .center a:hover,
 #footer .center a:focus
 {
@@ -80,6 +90,11 @@
     font-weight: bold;
 }
 
+.active #footer label
+{
+    color: var(--dark);
+}
+
 #footer input
 {
     background: transparent;
@@ -91,6 +106,11 @@
     padding: 20px;
     width: 100%;
     height: 52px;
+}
+
+.active #footer input
+{
+    border-color: var(--gray);
 }
 
 #footer input:focus

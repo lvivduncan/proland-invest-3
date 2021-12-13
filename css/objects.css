@@ -41,6 +41,11 @@
     font-weight: bold;
 }
 
+.active #objects header h1
+{
+    color: var(--dark);
+}
+
 #objects header h1::before
 {
     content: '';
@@ -79,6 +84,11 @@
 {
     font-weight: bold;
     font-size: 32px;
+}
+
+.active #objects .content h1
+{
+    color: var(--dark);
 }
 
 #objects .content p

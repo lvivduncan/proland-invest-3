@@ -20,6 +20,11 @@
     padding-left: 56px;
 }
 
+.active #offer header h1
+{
+    color: var(--dark);
+}
+
 #offer figure
 {
     display: grid;
@@ -64,6 +69,11 @@
 #offer figcaption h1
 {
     color: var(--white);
+}
+
+.active #offer figcaption h1
+{
+    color: var(--dark);
 }
 
 #offer figcaption p
