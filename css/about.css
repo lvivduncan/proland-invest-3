@@ -35,13 +35,13 @@
     color: var(--dark);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     #about h1::first-line
     {
         color: var(--dark);
     }
-}
+} */
 
 #about p 
 {

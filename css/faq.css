@@ -23,13 +23,13 @@
     color: var(--dark);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     #faq header h1
     {
         color: var(--dark);
     }
-}
+} */
 
 #faq .tns-inner
 {
@@ -90,13 +90,13 @@
     background: var(--gray);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     #faq .tns-nav button 
     {
         background: var(--gray);
     }
-}
+} */
 
 #faq .tns-nav button.tns-nav-active
 {
@@ -116,13 +116,13 @@
     color: var(--dark);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     #faq article h1
     {
         color: var(--dark);
     }
-}
+} */
 
 #faq article p
 {

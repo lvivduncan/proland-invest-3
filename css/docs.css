@@ -35,13 +35,13 @@
     color: var(--dark);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     #docs header h1
     {
         color: var(--dark);
     }
-}
+} */
 
 #docs header a
 {
@@ -99,14 +99,14 @@
     color: var(--dark);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     #docs article div
     {
         background: var(--white);
         color: var(--dark);
     }
-}
+} */
 
 #docs article:hover
 {
@@ -131,13 +131,13 @@
     color: var(--dark);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     #docs article h1
     {
         color: var(--dark);
     }
-}
+} */
 
 #docs article p
 {

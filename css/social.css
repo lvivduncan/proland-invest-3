@@ -35,10 +35,10 @@
     fill: var(--dark);
 }
 
-@media (prefers-color-scheme: light)
+/* @media (prefers-color-scheme: light)
 {
     .social svg
     {
         fill: var(--dark);
     }
-}
+} */
