@@ -8,11 +8,21 @@
     
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/style.css" media="(prefers-color-scheme: dark)">
-    <link rel="stylesheet" href="css/light-style.css" media="(prefers-color-scheme: light)">
+    <!-- <link rel="stylesheet" href="css/style.css" media="(prefers-color-scheme: dark)"> -->
+    <!-- <link rel="stylesheet" href="css/light-style.css" media="(prefers-color-scheme: light)"> -->
 
     <meta name="description" content="Proland-invest">
     <link rel="icon" href="./favicon.svg" type="image/svg">
+
+    <script>
+        if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    
+            console.log('dark')
+        } else {
+
+            console.log('light')
+        }
+    </script>
 </head>
 <body>
 
