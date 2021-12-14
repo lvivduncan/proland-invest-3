@@ -1,10 +1,32 @@
+/* ///////////////////////////
+// про нас -- під слайдером // 
+/////////////////////////// */
+
 #about
 {
     width: 1110px;
-    margin: auto auto 200px;
+    margin: 140px auto 200px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     position: relative;
+}
+
+@media(max-width:1130px)
+{
+    #about
+    {
+        width: 95%;
+    }
+}
+
+@media(max-width:776px)
+{
+    #about
+    {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 60px auto;
+    }
 }
 
 /* опис */
@@ -23,6 +45,17 @@
     font-size: 48px;
     font-weight: 600;
     margin: 0 0 70px;
+}
+
+@media(max-width:996px)
+{
+    #about h1
+    {
+        /* color: var(--gold); */
+        font-size: 32px;
+        /* font-weight: 600; */
+        margin: 0 0 30px;
+    }    
 }
 
 #about h1::first-line
@@ -49,6 +82,14 @@
     color: var(--gray);
     line-height: 1.8;
     margin: 0 0 115px;
+}
+
+@media(max-width:540px)
+{
+    #about p 
+    {
+        margin: 0 0 30px;
+    }
 }
 
 #about a
@@ -84,6 +125,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     border-left: 4px solid var(--gold);
+}
+
+@media(max-width:450px)
+{
+    #about .pseudo-watermark
+    {
+        display: none;
+    }    
 }
 
 #about .pseudo-watermark::after,

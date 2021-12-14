@@ -9,6 +9,15 @@
     width: 1450px;
 }
 
+@media(max-width:1480px)
+{
+    #offer
+    {
+        width: 95%;
+        margin: 100px auto 0;
+    }
+}
+
 #offer header h1
 {
     color: var(--white);
@@ -25,18 +34,19 @@
     color: var(--dark);
 }
 
-/* @media (prefers-color-scheme: light)
-{
-    #offer header h1
-    {
-        color: var(--dark);
-    }
-} */
-
 #offer figure
 {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+}
+
+@media(max-width:776px)
+{
+    #offer figure
+    {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }    
 }
 
 #offer figcaption
@@ -84,14 +94,6 @@
     color: var(--dark);
 }
 
-/* @media (prefers-color-scheme: light)
-{
-    #offer figcaption h1
-    {
-        color: var(--dark);
-    }
-} */
-
 #offer figcaption p
 {
     color: var(--gray);
@@ -118,4 +120,12 @@
 {
     height: 660px;
     background: tomato;
+}
+
+@media(max-width:776px)
+{
+    #offer picture
+    {
+        height: 500px;
+    }
 }

@@ -19,6 +19,51 @@
         'objects-map objects-2 objects-2'
 }
 
+@media(max-width:1380px)
+{
+    #objects
+    {
+        width: 95%;
+    }
+}
+
+@media(max-width:996px)
+{
+    #objects
+    {
+        /* width: 1360px; */
+        /* margin: auto; */
+
+        /* display: grid; */
+        /* gap: 22px; */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 160px repeat(3,auto);
+
+        grid-template-areas:
+            'objects-header objects-header'
+            'objects-map objects-content'
+            'objects-map objects-1'
+            'objects-map objects-2'
+    }    
+}
+
+@media(max-width:996px)
+{
+    #objects
+    {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 160px repeat(4,auto);
+
+        grid-template-areas:
+            'objects-header'
+            'objects-content'
+            'objects-map'
+            'objects-1'
+            'objects-2'
+    }       
+}
+
 /* заголовок і лінк "Показати більше" */
 #objects header 
 {
@@ -31,14 +76,23 @@
     justify-content: space-between;
 }
 
+@media(max-width:450px)
+{
+    #objects header
+    {
+        flex-flow: column;
+        gap: 20px;
+    }
+}
+
 #objects header h1
 {
     display: flex;
     align-items: center;
     gap: 44px; 
 
-    font-size: 48px;
-    font-weight: bold;
+    /* font-size: 48px; */
+    /* font-weight: bold; */
 }
 
 .active #objects header h1
@@ -46,20 +100,20 @@
     color: var(--dark);
 }
 
-/* @media (prefers-color-scheme: light)
-{
-    #objects header h1
-    {
-        color: var(--dark);
-    }
-} */
-
 #objects header h1::before
 {
     content: '';
     width: 106px;
     height: 4px;
     background: var(--gold);
+}
+
+@media(max-width:450px)
+{
+    #objects header h1::before
+    {
+        display: none;
+    }
 }
 
 #objects header a
@@ -71,6 +125,14 @@
     margin-right: 110px;
 
     background: url("data:image/svg+xml,%3Csvg width='13' height='22' viewBox='0 0 13 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.322 11.0245L1.00001 0.999995' stroke='%23FBC710'/%3E%3Cpath d='M1 21L12.322 10.9755' stroke='%23FBC710'/%3E%3C/svg%3E%0A") no-repeat right center / 13px 22px;
+}
+
+@media(max-width:1380px)
+{
+    #objects header a
+    {
+        margin: 0;
+    }
 }
 
 /* опис */
@@ -99,14 +161,6 @@
     color: var(--dark);
 }
 
-/* @media (prefers-color-scheme: light)
-{
-    #objects .content h1
-    {
-        color: var(--dark);
-    }
-} */
-
 #objects .content p
 {
     color: var(--gray);
@@ -133,7 +187,23 @@
 {
     grid-area: objects-map;
 
-    height: 900px;
+    min-height: 900px;
+}
+
+@media(max-width:776px)
+{
+    #objects-map
+    {
+        min-height: 600px;
+    }    
+}
+
+@media(max-width:540px)
+{
+    #objects-map
+    {
+        min-height: 400px;
+    }    
 }
 
 #objects picture

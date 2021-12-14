@@ -8,12 +8,28 @@
     width: 1110px;
 }
 
+@media(max-width:1130px)
+{
+    #company
+    {
+        width: 95%;
+    }
+}
+
+@media(max-width:776px)
+{
+    #company
+    {
+        margin: 30px auto;
+    }
+}
+
 #company header h1
 {
     text-align: center;
     color: var(--white);
-    font-size: 48px;
-    font-weight: 700;
+    /* font-size: 48px; */
+    /* font-weight: 700; */
     margin: 0 0 50px;
 }
 

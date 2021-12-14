@@ -8,6 +8,22 @@
     width: 1110px;
 }
 
+@media(max-width:1130px)
+{
+    #docs
+    {
+        width: 95%;
+    }
+}
+
+@media(max-width:776px)
+{
+    #docs
+    {
+        margin: 30px auto;
+    }
+}
+
 /* заголовок і лінк "Показати більше" */
 #docs header 
 {
@@ -21,27 +37,27 @@
     height: 160px;
 }
 
+@media(max-width:450px)
+{
+    #docs header
+    {
+        flex-flow: column;
+    }
+}
+
 #docs header h1
 {
     display: flex;
     align-items: center;
 
-    font-size: 48px;
-    font-weight: bold;
+    /* font-size: 48px; */
+    /* font-weight: bold; */
 }
 
 .active #docs header h1
 {
     color: var(--dark);
 }
-
-/* @media (prefers-color-scheme: light)
-{
-    #docs header h1
-    {
-        color: var(--dark);
-    }
-} */
 
 #docs header a
 {
@@ -59,12 +75,48 @@
     gap: 20px;
 }
 
+@media(max-width:776px)
+{
+    #docs .content
+    {
+        /* display: grid; */
+        grid-template-columns: repeat(2,1fr);
+        /* gap: 20px; */
+    }    
+}
+
+@media(max-width:540px)
+{
+    #docs .content
+    {
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        /* gap: 20px; */
+    }    
+}
+
 #docs article
 {
     border: 4px solid transparent;
     overflow: hidden;
     position: relative;
     /* transition: .5s; */
+}
+
+@media(max-width:776px)
+{
+    #docs article:last-child
+    {
+        display: none;
+    }
+}
+
+@media(max-width:540px)
+{
+    #docs article:nth-of-type(2)
+    {
+        display: none;
+    }    
 }
 
 #docs article picture

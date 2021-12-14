@@ -113,10 +113,7 @@ const slider3 = tns({
       640: {
         edgePadding: 20,
         gutter: 20,
-        items: 2
-      },
-      700: {
-        gutter: 30
+        items: 1
       },
       900: {
         items: 2
