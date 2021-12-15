@@ -90,9 +90,6 @@
     display: flex;
     align-items: center;
     gap: 44px; 
-
-    /* font-size: 48px; */
-    /* font-weight: bold; */
 }
 
 .active #objects header h1
@@ -148,6 +145,14 @@
     display: flex;
     justify-content: space-evenly;
     flex-flow: column;
+}
+
+@media(max-width:450px)
+{
+    #objects .content
+    {
+        gap: 20px;
+    }
 }
 
 #objects .content h1

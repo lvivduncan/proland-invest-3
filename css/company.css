@@ -38,14 +38,6 @@
     color: var(--dark);
 }
 
-/* @media (prefers-color-scheme: light)
-{
-    #company header h1
-    {
-        color: var(--dark);
-    }
-} */
-
 #company .tns-horizontal.tns-subpixel>.tns-item
 {
     vertical-align: middle;

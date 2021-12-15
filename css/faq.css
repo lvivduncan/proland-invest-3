@@ -27,9 +27,15 @@
 #faq header h1
 {
     color: var(--white);
-    /* font-size: 48px; */
-    /* font-weight: 700; */
     margin: 0 0 50px;
+}
+
+@media(max-width:776px)
+{
+    #faq header h1
+    {
+        text-align: center;
+    }    
 }
 
 .active #faq header h1
@@ -58,6 +64,14 @@
     justify-content: space-between;
 }
 
+@media(max-width:450px)
+{
+    #faq article
+    {
+        padding: 20px 0;
+    }    
+}
+
 #faq article::before
 {
     content: '';
@@ -70,6 +84,14 @@
     right: 20px;
 }
 
+@media(max-width:450px)
+{
+    #faq article::before
+    {
+        display: none;
+    }
+}
+
 #faq .tns-nav
 {
     margin: 100px 0 0;
@@ -77,6 +99,18 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+@media(max-width:450px)
+{
+    #faq .tns-nav
+    {
+        margin: 0;
+/*         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; */
+    }    
 }
 
 #faq .tns-nav button 
@@ -89,6 +123,14 @@
     background: var(--white);
     margin: 50px 0 0;
     cursor: pointer;
+}
+
+@media(max-width:450px)
+{
+    #faq .tns-nav button 
+    {
+        margin: 0;
+    }    
 }
 
 .active #faq .tns-nav button 
@@ -109,6 +151,15 @@
     padding-right: 100px;
 }
 
+@media(max-width:450px)
+{
+    #faq article h1
+    {
+        padding-right: 0;
+        margin: 0 20px;
+    }    
+}
+
 .active #faq article h1
 {
     color: var(--dark);
@@ -118,6 +169,14 @@
 {
     font-size: 14px;
     color: var(--gray);
+}
+
+@media(max-width:450px)
+{
+    #faq article p
+    {
+        margin: 0 20px;
+    }    
 }
 
 #faq article a
@@ -131,4 +190,12 @@
     padding-right: 30px;
     background: url("data:image/svg+xml,%3Csvg width='13' height='22' viewBox='0 0 13 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.322 11.0245L1.00001 0.999995' stroke='%23FBC710'/%3E%3Cpath d='M1 21L12.322 10.9755' stroke='%23FBC710'/%3E%3C/svg%3E%0A") no-repeat right center / 13px 22px;
     align-self: flex-start;
+}
+
+@media(max-width:450px)
+{
+    #faq article a
+    {
+        margin: 0 20px;
+    }
 }

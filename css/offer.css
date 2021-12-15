@@ -18,6 +18,15 @@
     }
 }
 
+@media(max-width:450px)
+{
+    #offer
+    {
+        /* width: 95%; */
+        margin: 40px auto;
+    }
+}
+
 #offer header h1
 {
     color: var(--white);
@@ -27,6 +36,15 @@
     display: flex;
     align-items: center;
     padding-left: 56px;
+}
+
+@media(max-width:450px)
+{
+    #offer header h1
+    {
+        padding-left: 0;
+        justify-content: center;
+    }    
 }
 
 .active #offer header h1

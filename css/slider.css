@@ -92,6 +92,14 @@
     }
 }
 
+@media(max-width:450px)
+{
+    #slider figcaption
+    {
+        padding-left: 10px;
+    }
+}
+
 /* жовта лінія */
 #slider figcaption::before
 {
@@ -137,6 +145,14 @@
         /* color: var(--gold); */
         font-size: 40px;
         /* font-weight: 600; */
+    }
+}
+
+@media(max-width:540px)
+{
+    #slider h1
+    {
+        font-size: 32px;
     }
 }
 
