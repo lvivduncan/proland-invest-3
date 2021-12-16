@@ -409,6 +409,22 @@
 
     <div id="switcher"></div>
 
+    <div id="order" class="active">
+        <svg viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+        Подати заявку
+    </div>
+
+    <div id="order-form">
+        <form method="post">
+            <!-- <input type="hidden" name="_token" value="xU5QZ1bVi7rJtflDOiAgM6NUDNsh2bhueMdhvjwd"> -->
+            <!-- <input type="hidden" name="group_name" value="Головна сторінка" /> -->
+            <input type="text" placeholder="Ім'я" aria-label="Ім'я" name="client_name" value="" />
+            <input type="text" placeholder="Email" aria-label="E-mail" name="client_email" value="" />
+            <input type="number" placeholder="Телефон *" aria-label="Телефон" name="client_phone" value="" required minlength="10" />
+            <button>Замовити</button>
+        </form>
+    </div>
+
     <script src="js/fancybox.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/init.js"></script>

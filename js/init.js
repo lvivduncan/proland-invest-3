@@ -1,6 +1,21 @@
 
 // init
 
+const body = document.getElementsByTagName('body')[0]
+
+{
+    window.addEventListener('scroll', () => {
+
+        if(window.pageYOffset > 50){
+
+            body.classList.add('scroll')
+        } else {
+
+            body.classList.remove('scroll')
+        }
+    });
+}
+
 {
     // перший слайдер
     const slider = document.getElementById('slider'),
@@ -125,7 +140,7 @@ const slider3 = tns({
 
 
 // TODO: bug
-const cover = document.createElement('div')
+/* const cover = document.createElement('div')
 cover.setAttribute('id', 'cover')
 
 const body = document.getElementsByTagName('body')[0]
@@ -153,14 +168,13 @@ cover.addEventListener('click', () => {
 
     document.querySelector('#phone ul').className = ''
     cover.remove()
-})
+}) */
 // TODO: bug
 
 
 // switch color theme
 {
-    const switcher = document.getElementById('switcher'),
-          body = document.getElementsByTagName('body')[0]
+    const switcher = document.getElementById('switcher')
 
     if(localStorage.getItem('theme-color') === 'light'){
 
@@ -185,6 +199,193 @@ cover.addEventListener('click', () => {
     })
 }
 
+{
+    // const body = document.getElementsByTagName('body')[0];
+
+    // create global element for phone and mobile menu and order-form
+    const cover = document.createElement('div');
+    cover.setAttribute('id', 'cover');
+
+    // phone icon from nav
+    const phone = document.getElementById('phone');
+
+    // mobile phones
+    const phoneUl = phone.getElementsByTagName('ul')[0];
+
+    // check resize
+    let flag = false;
+
+    // check phone click
+    let clickPhone = false;
+
+    // check menu click
+    let clickMenu = false;
+
+        const order = document.getElementById('order');
+
+        const form = document.getElementById('order-form');
+        
+        if(order !== null){
+
+            // show/hide
+            window.addEventListener('scroll', () => {
+                if(window.pageYOffset < 50){
+                    order.className = '';
+                } else if(window.pageYOffset > 100) {
+                    setTimeout( () => {
+                        order.className = 'active';
+                    }, 10);
+                }
+            });
+
+            order.addEventListener('click', () => {
+
+                // insert cover and wiev mobile menu
+                body.append(cover);
+
+                form.classList.add('active');
+            });
+        }       
+
+    phone.addEventListener('click', () => {
+
+        if(clickPhone === false && clickMenu === false){
+
+            // insert cover and wiev mobile menu
+            body.append(cover);
+
+            // show mobile phones
+            phoneUl.classList.add('active');
+
+            clickPhone = true;
+        } else if(clickPhone === false && clickMenu === true) {
+
+            // show mobile phones
+            phoneUl.classList.add('active');
+
+            // hide mobile nav if open
+            navUl.classList.remove('active');
+
+            clickMenu = false;
+            clickPhone = true;
+        } else {
+            
+            // hide mobile phones
+            phoneUl.classList.remove('active');
+
+            // delete cover
+            cover.remove();
+
+            // set null
+            clickPhone = false;
+        }
+
+        // close order form (if exists)
+        form && form.classList.remove('active');
+    });
+
+    // menu
+    const nav = document.getElementById('nav');
+
+    // mobile menu
+    const navUl = nav.getElementsByTagName('ul')[0];
+
+    // menu icon
+    const menu = document.createElement('div');
+    menu.setAttribute('id', 'menu');
+
+    mobileMenu();
+
+    window.addEventListener('resize', mobileMenu);
+
+    menu.addEventListener('click', () => {
+
+        if(clickMenu === false && clickPhone === false){
+
+            // insert cover and wiev mobile menu
+            body.append(cover);
+
+            // show mobile phones
+            navUl.classList.add('active');
+
+            clickMenu = true;
+        } else if(clickMenu === false && clickPhone === true){
+
+            // show mobile nav
+            navUl.classList.add('active');
+
+            // hide moblile phones
+            phoneUl.classList.remove('active');
+
+            clickPhone = false;
+            clickMenu = true;
+        } else {
+
+            // hide mobile phones
+            navUl.classList.remove('active');
+
+            // delete cover
+            cover.remove();
+
+            // set null
+            clickMenu = false;
+        }
+
+        // close order form (if exists)
+        form && form.classList.remove('active');
+    });
+
+    document.addEventListener('click', e => {
+
+        if(e.target.id === 'cover'){
+
+            closeAll();
+        }
+    });
+
+    document.addEventListener('keydown', e => {
+
+        if(e.code === 'Escape' || e.key === 'Escape'){
+
+            closeAll();
+        }
+    });
+
+    function mobileMenu(){
+
+        if(window.innerWidth < 996){
+
+            nav.append(menu);
+
+            flag = true;
+        } else {
+
+            menu.remove();
+            flag = false;
+        }
+    }
+
+    function closeAll(){
+
+        // delete cover
+        cover.remove();
+
+        // hide mobile menu
+        navUl.classList.remove('active');
+
+        // hide mobile phones
+        phoneUl.classList.remove('active');
+
+        // hide order form
+        form && form.classList.remove('active');
+        
+        // set null
+        clickPhone = false;
+
+        // set null
+        clickMenu = false;
+    }
+}
 
 
 
@@ -194,5 +395,4 @@ cover.addEventListener('click', () => {
 
 
 
-
-// 14-12-2021
+// 16-12-2021
