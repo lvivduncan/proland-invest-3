@@ -26,7 +26,6 @@
 
 #faq header h1
 {
-    color: var(--white);
     margin: 0 0 50px;
 }
 
@@ -36,11 +35,6 @@
     {
         text-align: center;
     }    
-}
-
-.active #faq header h1
-{
-    color: var(--dark);
 }
 
 #faq .tns-inner
@@ -106,10 +100,6 @@
     #faq .tns-nav
     {
         margin: 0;
-/*         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px; */
     }    
 }
 

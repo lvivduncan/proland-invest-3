@@ -27,15 +27,7 @@
 #company header h1
 {
     text-align: center;
-    color: var(--white);
-    /* font-size: 48px; */
-    /* font-weight: 700; */
     margin: 0 0 50px;
-}
-
-.active #company header h1
-{
-    color: var(--dark);
 }
 
 #company .tns-horizontal.tns-subpixel>.tns-item

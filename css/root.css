@@ -61,6 +61,7 @@ header.title h1
 {
     font-size: 48px;
     font-weight: 700;
+    color: var(--white);
 }
 
 @media(max-width:776px)
@@ -70,6 +71,11 @@ header.title h1
         font-size: 32px;
         /* font-weight: 700; */
     }    
+}
+
+body.active header.title h1
+{
+    color: var(--dark);
 }
 
 .logo

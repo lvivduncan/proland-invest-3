@@ -1,0 +1,30 @@
+
+/* /////////////////////
+// внутрішня сторінка //
+///////////////////// */
+
+#page
+{
+    margin: 200px 0 100px;
+}
+
+#page header
+{
+    width: 1800px;
+    margin: auto;
+}
+
+#page header h1
+{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+#page header h1::before
+{
+    content: '';
+    width: 106px;
+    height: 4px;
+    background: var(--gold);
+}

@@ -79,6 +79,15 @@
     gap: 40px;
 }
 
+@media(max-width:450px)
+{
+    #offer figcaption
+    {
+        padding: 30px;
+        gap: 30px;
+    }    
+}
+
 #offer figcaption::before,
 #offer figcaption::after
 {
@@ -136,7 +145,6 @@
 #offer picture
 {
     height: 660px;
-    background: tomato;
 }
 
 @media(max-width:776px)
@@ -144,5 +152,13 @@
     #offer picture
     {
         height: 500px;
+    }
+}
+
+@media(max-width:450px)
+{
+    #offer picture
+    {
+        height: 350px;
     }
 }

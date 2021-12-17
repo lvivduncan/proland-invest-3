@@ -31,11 +31,6 @@
 {
     #objects
     {
-        /* width: 1360px; */
-        /* margin: auto; */
-
-        /* display: grid; */
-        /* gap: 22px; */
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 160px repeat(3,auto);
 
@@ -90,11 +85,6 @@
     display: flex;
     align-items: center;
     gap: 44px; 
-}
-
-.active #objects header h1
-{
-    color: var(--dark);
 }
 
 #objects header h1::before

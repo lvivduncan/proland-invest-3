@@ -84,6 +84,14 @@
     flex-flow: column;
 }
 
+@media(max-width:1120px)
+{
+    #slider figcaption
+    {
+        width: 95%;
+    }
+}
+
 @media(max-width:776px)
 {
     #slider figcaption

@@ -16,11 +16,13 @@ const body = document.getElementsByTagName('body')[0]
     });
 }
 
-{
-    // перший слайдер
+
+// перший слайдер
+if(document.getElementById('slider') !== null){
+
     const slider = document.getElementById('slider'),
-          slides = slider.querySelectorAll('figure'),
-          length = slides.length
+            slides = slider.querySelectorAll('figure'),
+            length = slides.length
 
     for(let i = 0; i < slides.length; i++){
 
@@ -97,80 +99,47 @@ const body = document.getElementsByTagName('body')[0]
     })
 }
 
-// компанії, які нам довіряють
-const slider2 = tns({
-    container: '#company .content',
-    mouseDrag: true,
-    items: 1,
-    responsive: {
-      640: {
-        edgePadding: 20,
-        gutter: 20,
-        items: 2
-      },
-      700: {
-        gutter: 30
-      },
-      900: {
-        items: 3
-      }
-    }
-});
-
-// питання-відповідь
-const slider3 = tns({
-    container: '#faq .content',
-    mouseDrag: true,
-    items: 1,
-    controls: false,
-    navPosition: 'bottom',
-    responsive: {
-      640: {
-        edgePadding: 20,
-        gutter: 20,
-        items: 1
-      },
-      900: {
-        items: 2
-      }
-    }
-});
-
-
-
-
-// TODO: bug
-/* const cover = document.createElement('div')
-cover.setAttribute('id', 'cover')
-
-const body = document.getElementsByTagName('body')[0]
-
-let phone = false
-
-// phone
-document.getElementById('phone').addEventListener('click', () => {
-
-    if(phone === false){
-
-        document.querySelector('#phone ul').className = 'active'
-        body.append(cover)
-        phone = true
-    } else {
-        
-        document.querySelector('#phone ul').className = ''
-        cover.remove()
-        phone = false
-    }
-
-})
-
-cover.addEventListener('click', () => {
-
-    document.querySelector('#phone ul').className = ''
-    cover.remove()
-}) */
-// TODO: bug
-
+if(document.querySelectorAll('.tns').length > 0)
+{
+    // компанії, які нам довіряють
+    const slider2 = tns({
+        container: '#company .content',
+        mouseDrag: true,
+        items: 1,
+        responsive: {
+          640: {
+            edgePadding: 20,
+            gutter: 20,
+            items: 2
+          },
+          700: {
+            gutter: 30
+          },
+          900: {
+            items: 3
+          }
+        }
+    });
+    
+    // питання-відповідь
+    const slider3 = tns({
+        container: '#faq .content',
+        mouseDrag: true,
+        items: 1,
+        controls: false,
+        navPosition: 'bottom',
+        responsive: {
+          640: {
+            edgePadding: 20,
+            gutter: 20,
+            items: 1
+          },
+          900: {
+            items: 2
+          }
+        }
+    });
+}
 
 // switch color theme
 {
