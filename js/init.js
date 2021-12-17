@@ -1,3 +1,25 @@
+// test prefers-color-scheme
+window.onload = function(){
+
+    if (window.matchMedia('(prefers-color-scheme)').media === 'light') {
+
+        console.log('light')
+    } 
+
+    if (window.matchMedia('(prefers-color-scheme)').media === 'dark') {
+
+        console.log('dark')
+    } 
+
+    console.log(window.matchMedia('(prefers-color-scheme: light)'))
+    console.log(window.matchMedia('(prefers-color-scheme: dark)'))
+
+    if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
+
+        console.log('Dark mode is supported');
+    }
+}
+
 
 // init
 
