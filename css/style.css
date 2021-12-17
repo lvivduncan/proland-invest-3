@@ -24,7 +24,9 @@
 
 @import url('./docs.css');
 
-@import url('./page.css');
+@import url('./swipe-slider.css');
+
+@import url('./main.css');
 
 @import url('./footer.css');
 

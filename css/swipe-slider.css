@@ -1,0 +1,163 @@
+
+/* ///////////////
+// swipe-slider //
+/////////////// */
+
+#swipe-slider
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+
+    overflow: hidden;
+}
+
+#swipe-slider::before
+{
+    content: '';
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:776px)
+{
+    #swipe-slider
+    {
+        height: 60vh;
+    }
+}
+
+#swipe-slider article
+{
+    height: 100%;
+}
+
+#swipe-slider picture
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-size: cover!important;
+    background-position: 50% 50%!important;
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+
+#swipe-slider picture img 
+{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#swipe-slider h1
+{
+    z-index: 2;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    opacity: 0;
+    color: var(--gold);
+    padding-left: 20px;
+    font-size: 80px;
+    font-weight: 500;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+
+@media(max-width: 1140px)
+{ 
+    #swipe-slider h1
+    { 
+        font-size: 60px;
+    }
+}
+
+@media(max-width:540px)
+{ 
+    #swipe-slider h1
+    { 
+        font-size: 30px;
+    }
+}
+
+/* ///////////////////
+// анімація слайдів //
+/////////////////// */
+
+@keyframes imageAnimation
+{ 
+    0%
+    {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    8%
+    {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    17%
+    {
+        opacity: 1;
+    }
+
+    25%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes titleAnimation
+{ 
+    0%
+    {
+        opacity: 0;
+    }
+
+    8%
+    {
+        opacity: 0;
+    }
+
+    10%
+    {
+        opacity: 1;
+    }
+
+    11%
+    {
+        opacity: 1;
+    }
+
+    14%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}

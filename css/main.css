@@ -1,0 +1,146 @@
+
+/* /////////////////////
+// внутрішня сторінка //
+///////////////////// */
+
+#main
+{
+    margin-top: 100vh;
+    overflow: hidden;
+    color: var(--white);
+}
+
+@media(max-width:776px)
+{
+    #main
+    {
+        margin-top: 60vh;
+    }    
+}
+
+#main header
+{
+    width: 1800px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 1820px)
+{
+    #main header 
+    {
+        width: 95%;
+    }
+}
+
+@media(max-width: 776px)
+{
+    #main header 
+    {
+        flex-flow: column;
+        gap: 20px;
+    }
+}
+
+#main header h1
+{
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+#main header h1::before
+{
+    content: '';
+    width: 106px;
+    height: 4px;
+    background: var(--gold);
+}
+
+#main .wrapper h1,
+#main .wrapper h2,
+#main .wrapper h3,
+#main .wrapper h4,
+#main .wrapper p
+{
+    margin: 0 0 40px;
+    line-height: 1.8;
+}
+
+#main .wrapper h1
+{
+    font-size: 32px;
+}
+
+body.active p
+{
+    color: var(--dark);
+}
+
+#main .wrapper h1,
+#main .wrapper h2,
+#main .wrapper h3,
+#main .wrapper h4
+{
+    color: var(--gold);
+}
+
+#main .wrapper picture
+{
+    display: block;
+    max-width: 50%;
+    float: right;
+    margin: 160px 0 20px 40px;
+}
+
+@media(max-width:996px)
+{
+    #main .wrapper picture
+    {
+        max-width: 100%;
+        float: none;
+        margin: 40px 0;
+    }    
+}
+
+#main .wrapper ul,
+#main .wrapper ol
+{
+    margin: 40px 0 40px 40px;
+}
+
+#main .wrapper li
+{
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+body.active #main .wrapper li
+{
+    color: var(--dark);
+}
+
+/* ////////////
+// шарбатони //
+//////////// */
+
+#share-buttons svg
+{
+    fill: var(--white);
+    width: 32px;
+    height: 32px;
+    transition: .5s;
+}
+
+body.active #share-buttons svg
+{
+    fill: var(--dark);
+}
+
+#share-buttons svg:hover,
+body.active #share-buttons svg:hover
+{
+    fill: var(--gold);
+}
