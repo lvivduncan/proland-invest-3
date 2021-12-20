@@ -25,18 +25,7 @@
 @media(max-width:776px)
 {
     #skills
-    {
-        /* width: 1295px;
-        height: 140px;
-        background: var(--dark);
-        z-index: 4;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        display: grid;
-        align-items: center; */
-        
+    {        
         position: static;
         grid-template-columns: repeat(3,1fr);
         gap: 20px;

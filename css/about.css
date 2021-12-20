@@ -51,9 +51,7 @@
 {
     #about h1
     {
-        /* color: var(--gold); */
         font-size: 32px;
-        /* font-weight: 600; */
         margin: 0 0 30px;
     }    
 }
@@ -67,14 +65,6 @@
 {
     color: var(--dark);
 }
-
-/* @media (prefers-color-scheme: light)
-{
-    #about h1::first-line
-    {
-        color: var(--dark);
-    }
-} */
 
 #about p 
 {

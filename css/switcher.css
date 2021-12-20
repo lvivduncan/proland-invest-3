@@ -10,23 +10,15 @@
     bottom: 5px;
     left: 5px;
     z-index: 4;
-    /* transition: .5s; */
-
     color: var(--gold);
     font-size: 8px;
     font-weight: 800;
     text-transform: uppercase;
-
     border: 1px solid var(--gold);
     border-radius: 50%;
     height: 44px;
     width: 44px;
 }
-
-/* body.active #switcher
-{
-    background: var(--white);
-} */
 
 #switcher::after
 {
@@ -44,7 +36,6 @@
     left: calc(50% - 12px);
     width: 24px;
     height: 24px;
-    /* transition: .5s; */
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: center;
