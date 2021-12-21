@@ -343,8 +343,8 @@ if(document.querySelectorAll('.tns').length > 0)
 
 // slider inner page
 {
-    const images = document.querySelectorAll('#swipe-slider picture'),
-          signatures = document.querySelectorAll('#swipe-slider h1'),
+    const images = document.querySelectorAll('#fade-slider picture'),
+          signatures = document.querySelectorAll('#fade-slider h1'),
           counter = 6
 
     if(images !== null){

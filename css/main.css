@@ -10,17 +10,17 @@
 }
 
 /* якщо є слайдер вгорі */
-#swipe-slider + #main
+#fade-slider + #main
 {
     margin-top: 100vh;
 }
 
 @media(max-width:776px)
 {
-    #swipe-slider + #main
+    #fade-slider + #main
     {
         margin-top: 60vh;
-    }    
+    }
 }
 
 #main header
