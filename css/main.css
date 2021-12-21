@@ -5,14 +5,19 @@
 
 #main
 {
-    margin-top: 100vh;
     overflow: hidden;
     color: var(--white);
 }
 
+/* якщо є слайдер вгорі */
+#swipe-slider + #main
+{
+    margin-top: 100vh;
+}
+
 @media(max-width:776px)
 {
-    #main
+    #swipe-slider + #main
     {
         margin-top: 60vh;
     }    
