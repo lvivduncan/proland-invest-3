@@ -142,14 +142,16 @@
     padding: 0 42px;
 }
 
-#offer picture
+#offer picture,
+#offer-map
 {
     height: 660px;
 }
 
 @media(max-width:776px)
 {
-    #offer picture
+    #offer picture,
+    #offer-map
     {
         height: 500px;
     }
@@ -157,7 +159,8 @@
 
 @media(max-width:450px)
 {
-    #offer picture
+    #offer picture,
+    #offer-map
     {
         height: 350px;
     }
