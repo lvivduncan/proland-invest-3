@@ -1,0 +1,35 @@
+/* ////////////////////
+// додаткова галерея //
+//////////////////// */
+
+#gallery
+{
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+#gallery .wrapper
+{
+    display: grid;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery .wrapper.col-2
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+#gallery .wrapper.col-3
+{
+    grid-template-columns: repeat(3,1fr);
+}
+
+@media(max-width:776px)
+{
+    #gallery .wrapper
+    {
+        grid-template-columns: 1fr!important;
+    }    
+}
