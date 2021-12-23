@@ -307,3 +307,9 @@ body.active #share-buttons svg
 {
     fill: var(--white);
 }
+
+body.active p,
+body.active #main li
+{
+    color: var(--white);
+}

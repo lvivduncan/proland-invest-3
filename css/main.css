@@ -110,19 +110,19 @@ body.active p
     }    
 }
 
-#main .wrapper ul,
-#main .wrapper ol
+#main ul,
+#main ol
 {
     margin: 40px 0 40px 40px;
 }
 
-#main .wrapper li
+#main li
 {
     margin: 10px 0;
     line-height: 1.8;
 }
 
-body.active #main .wrapper li
+body.active #main li
 {
     color: var(--dark);
 }
