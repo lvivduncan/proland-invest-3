@@ -283,12 +283,27 @@ body.active #switcher.active::before
     color: var(--dark);
 }
 
+body.active #main
+{
+    color: var(--white);
+}
+
 header.title h1
 {
     color: var(--dark);
 }
 
+body.active header.title h1
+{
+    color: var(--white);
+}
+
 #share-buttons svg
 {
     fill: var(--dark);
+}
+
+body.active #share-buttons svg
+{
+    fill: var(--white);
 }
